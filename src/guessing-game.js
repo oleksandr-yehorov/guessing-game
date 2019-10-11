@@ -12,19 +12,19 @@ class GuessingGame {
     // than average of min and max range
 
     guess() {
-        return this.value = Math.ceil((this.min + this.max) / 2);
+        return Math.ceil((this.min + this.max) / 2);
     }
 
     // Set a new maximum value
 
     lower() {
-        this.max = this.value;
+        this.max = this.guess();
     }
 
     // Set a new minimum value
 
     greater() {
-        this.min = this.value;
+        this.min = this.guess();
     }
 }
 
