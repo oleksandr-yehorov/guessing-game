@@ -7,7 +7,8 @@ class GuessingGame {
     }
 
     guess() {
-       
+        this.value = ((this.start + this.end) / 2);
+        return this.value;
     }
 
     lower() {
